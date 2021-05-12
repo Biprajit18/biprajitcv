@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: wheat;
+            font-family:cursive;
+        }
+        /*FOR TABLE*/
+        tr{
+            border-collapse: collapse;
+            background-color: rgb(132 185 220);
+        }
+        td,th{
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        a.new{
+            display: inline-block;
+            color: white;
+            text-transform: uppercase;
+        }
+        button.ten:hover{
+            height: 300px;
+            width: 330px;
+            position: absolute;
+            background: url("ten2.png");
+        }
+        button.twelve:hover{
+            height: 260px;
+            width: 330px;
+            position: absolute;
+            background: url("twelve2.png");
+        }
+        button.sem:hover{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            background: url("sem2.png");
+        }
+        button{
+            background-color: blue;
+        }
+        ul{
+            font-size: 20px;
+        }
+        header{
+            background-color: rgb(163, 161, 161);
+            height: 120px;
+            margin: -9px;
+            width: 100%;
+            position: fixed;
+        }
+        .logo{
+            height: 100px;
+            width: 90px;
+        }
+        .logo2{
+            height: 50px;
+            width: 50px;
+            float: unset;
+        }
+        #option{
+            margin-top: 55px;
+            margin-right: 10px;
+            padding: 7px 13px;
+            word-spacing: 5px;
+            font-size: 18px;
+            float: right;
+        }
+        a.old{
+            color: white;
+            text-transform: uppercase;
+        }
+        a.old:hover{
+            color: grey;
+        }
+        p{
+            font-size: 20px;
+        }
+        
+    </style>
+
+
+</head>
+
+
+<body>
+    
+    <header>
+        <nav id="header">
+            <img class="logo" src="cv.png">
+            <div id="option">
+                <a class="old" href="#home">Home</a>
+                <a class="old" href="#objective">Objective</a>
+                <a class="old" href="#education">Education</a>
+                <a class="old" href="#tech">Technical Skills & Others</a>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <br><br><br><br><br><br><br><br>
+        <h2><u>Personal Details</u></h2>
+        <h3><u>Name</u>-Biprajit Dhar Chowdhury</h3>
+        <h3><u>Contact</u>-842024938</h3>
+        <h3><u>Email-id</u>-<a href="#">chowdhurybiprajit18@gmail.com</a></h3>
+        <h3><u>Adress</u>-B-2/22/2(New),Setna Road,Shyampur,<br>
+        &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Budge Budge,kolkata-700137
+        </h3><br><br><hr>
+    </section>
+    <section id="objective">
+        <br><br><br><br><br><br>
+        <p><u>OBJECTIVE</u>- An Electronic & Communication Engineering Job in Stafford
+            Company for the post of an onsite engineering.
+        </p>
+    </section>
+    
+
+    <!--EDUCATION QUALIFICATION-->
+    <section id="education">
+        <br><br><br><br><br><br>
+        <h2><u>Education Qualification</u></h2>  
+        <!--MADHYAMIK-->
+        <table>
+            <tr>
+                <th><h4>MADHYAMIK Result(CLASS X)</h4></th>
+            </tr>
+            <tr>
+                <th>BOARD</th>
+                <th>SCHOOL</th>
+                <th>PERCENTAGE</th>
+                <th>YEAR OF PASSING</th>
+                <th rowspan=2><button class="ten"><a class="new" href="#">Show Result</a></button></th>
+            </tr>
+            <tr>
+                <td>WBBSE</td>
+                <td>NAVA NALANDA</td>
+                <td>74.14%</td>
+                <td>2016</td>
+            </tr>
+        </table><br><br>
+        <!--HS-->
+        <table>
+            <tr>
+                <th><h4>HS Result(CLASS XII)</h4></th>
+            </tr>
+            <tr>
+                <th>BOARD</th>
+                <th>SCHOOL</th>
+                <th>PERCENTAGE</th>
+                <th>YEAR OF PASSING</th>
+                <th rowspan=2><button class="twelve"><a class="new" href="#">Show Result</a></button></th>
+            </tr>
+            <tr>
+                <td>WBCHSE</td>
+                <td>NAVA NALANDA</td>
+                <td>68.8%</td>
+                <td>2018</td>
+            </tr>
+        </table><br><br>
+        <!--SEM RESULT-->
+        <table>
+            <tr>
+                <th><h4>SEM RESULT</h4></th>
+            </tr>
+            <tr>
+                <th>UNIVERSITY</th>
+                <th>COLLEGE</th>
+                <th>YGPA</th>
+                <th>YEAR OF PASSING</th>
+                <th rowspan=2><button class="sem"><a class="new"href="#">Show Result</a></button></th>
+            </tr>
+            <tr>
+                <td>MAKAUT</td>
+                <td>St. Thomas College of Engineering and Technology</td>
+                <td>9.8</td>
+                <td>2022</td>
+            </tr>
+        </table>
+    </section>
+
+    <!--Technical Language Proficiency-->
+    <section id="tech">
+        <br><br><br><br><br>
+        <h2><u>Technical Language Proficiency</u></h2>
+        <ul>
+            <li>C</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVA SCRIPT</li>
+        </ul>
+    </section>
+    <br><br>
+
+    <!--CO-CURRCULAR-->
+    <h2><u>Co-Cirrucular Activities</u></h2>
+    <ul>
+        <li>Learned <strong>PYTHON LANGUAGE</strong> from <strong>NPTEL</strong></li>
+        <li>Learned <strong>MACHINE LEARNING</strong> from <strong>COURSERA</strong></li>
+        <li>Learned <strong>WEB DEVELOPMENT</strong> from <strong>NULL STACK</strong>&nbsp;&nbsp;<a href="https://github.com/Nullstack-Technologies/Python-Basics-and-Beyond-2021">content of NULL STACK</a></li>
+    </ul><br><br>
+
+
+    <!--EXTRA CURRICILAR-->
+    <h2><u>Extra-Curricular Activities</u></h2>
+    <ul>
+        <li>Took part in College Sports</li>
+        <li>Took part in Pes Tournament</li>
+    </ul>
+</body>
+</html>
